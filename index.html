@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/apple.png" type="image/x-icon">
+    <title>iMac M1</title>
+
+</head>
+
+<body>
+
+    <section class="mt-5">
+
+        <div class="container">
+
+            <div class="wrapper">
+
+                <div class="row g-5">
+
+                    <div class="col-md-6">
+
+                        <img class="img-fluid" src="images/mac.png" alt="">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="heading">
+
+                            <h1>Customize Your Blue 24-inch iMac With Apple M1 Chip</h1>
+                            <p>Apple M1 Chip with 8-core CPU with 4 performence cores and 4 efficiency cores , 7-core
+                                GPU, and 16 core Nural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB
+                                4 ports Magic Mouce and Magic Keybord - US English </p>
+
+                        </div>
+
+                        <div class="configaration">
+
+                            <div class="memory mb-4">
+
+                                <h3 class="fs-5">Memeory</h3>
+                                <button id="8gb-memory" onclick="updatePrice(0, 'extraMemoryCost')"
+                                    class="btn btn-outline-secondary border border-secondary">8GB Unified
+                                    Memory</button>
+                                <button id="16gb-memory" onclick="updatePrice(180, 'extraMemoryCost')"
+                                    class="btn btn-outline-secondary border border-secondary">16GB Unified
+                                    Memory</button>
+
+                            </div>
+
+                            <div class="storage mb-4">
+
+                                <h3 class="fs-5">Storage</h3>
+                                <button id="256gb-ssd" onclick="updatePrice(0, 'extraStorageCost')"
+                                    class="btn btn-outline-secondary border border-secondary">256GB SSD Storage</button>
+                                <button id="512gb-ssd" onclick="updatePrice(100, 'extraStorageCost')"
+                                    class="btn btn-outline-secondary border border-secondary">512GB SSD Storage</button>
+                                <button id="1tb-ssd" onclick="updatePrice(180, 'extraStorageCost')"
+                                    class="btn btn-outline-secondary border border-secondary">1 SSD Storage</button>
+
+                            </div>
+
+                            <div class="delevery mb-5">
+
+                                <h3 class="fs-5">Chose Your Delevery Options</h3>
+
+                                <button id="free-delevary" onclick="updatePrice(0, 'deleveryCost')"
+                                    class="btn btn-outline-secondary border border-secondary">Friday , Aug 25 Free
+                                    Prime Delevery</button>
+
+                                <button id="paid-delevary" onclick="updatePrice(20, 'deleveryCost')"
+                                    class="btn btn-outline-secondary border border-secondary">Friday , Aug 21 Delevery
+                                    Charge $20</button>
+
+                            </div>
+
+                            <div class="total mb-4 w-50">
+
+                                <div class="fw-bold mb-2 border-bottom d-flex justify-content-lg-between">
+
+                                    <span>Best Price</span>
+                                    <p>$<span id="bestPrice">1299</span></p>
+
+                                </div>
+
+                                <div class="fw-bold mb-2 border-bottom  d-flex justify-content-lg-between">
+
+                                    <span>Extra Memory Cost</span>
+                                    <p>$<span id="extraMemoryCost">0</span></p>
+
+                                </div>
+
+                                <div class="fw-bold mb-2 border-bottom  d-flex justify-content-lg-between">
+
+                                    <span>Extra Storage Cost</span>
+                                    <p>$<span id="extraStorageCost">0</span></p>
+
+                                </div>
+
+                                <div
+                                    class="fw-bold mb-2 border-bottom border-2 border-dark d-flex justify-content-lg-between">
+                                    <span>Delevery Charge</span>
+                                    <p>$<span id="deleveryCost">0</span></p>
+
+                                </div>
+
+                                <div class="fw-bold mb-2 border-bottom  d-flex justify-content-lg-between">
+
+                                    <span>Total Price</span>
+                                    <p>$<span id="total-price">1299</span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Add Promo Code</p>
+
+                                    <div class="d-flex">
+
+                                        <input id="promo-code" class="form-control me-2" type="text">
+                                        <button id="promo-apply" class="btn btn-danger ">Apply</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="total">
+
+                    <h1 class="text-center">Total : $<span id="total-price-all">1299</span></h1>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
